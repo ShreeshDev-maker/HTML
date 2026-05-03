@@ -80,7 +80,7 @@
 </head>
 
 <body>
-
+<div id="top">
 <header>
   <img id="header-img" src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Restaurant Banner">
   <h1>Babu Restaurant</h1>
@@ -89,9 +89,9 @@
     <a href="#order-form">Order</a>
   </nav>
 </header>
-
+</div>
 <main>
-
+<div id ="menu">
   <!-- MENU SECTION -->
   <section id="menu">
     <h2>Menu</h2>
@@ -115,33 +115,45 @@
     </article>
 
   </section>
-
+</div>
   <!-- ORDER FORM -->
   <section id="order-form">
     <h2>Place Your Order</h2>
 
     <form>
-
+    <div class ="order-items">
+    <div class ="item" id ="paneer">
       <label for="paneer">Paneer Butter Masala (Qty):</label>
       <input type="number" id="paneer" name="paneer" min="0">
+    </div>
 
+    <div class ="item" id ="biryani">
       <label for="biryani">Veg Biryani (Qty):</label>
       <input type="number" id="biryani" name="biryani" min="0">
+    </div>
 
+    <div class ="item" id ="dosa">
       <label for="dosa">Masala Dosa (Qty):</label>
       <input type="number" id="dosa" name="dosa" min="0">
-
+    </div>
+    </div>
+    <div class="addons">
       <p><strong>Add-ons:</strong></p>
       <label><input type="checkbox" name="addons" value="raita"> Raita</label>
       <label><input type="checkbox" name="addons" value="salad"> Salad</label>
-
+    </div>
+    <div class="spice-level">
       <p><strong>Spice Level:</strong></p>
       <label><input type="radio" name="spice" value="mild"> Mild</label>
       <label><input type="radio" name="spice" value="medium"> Medium</label>
       <label><input type="radio" name="spice" value="spicy"> Spicy</label>
-
+    </div>
+    <div class="contact-info">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
       <label for="requests">Special Requests:</label>
       <textarea id="requests" name="requests" rows="4"></textarea>
+    </div>
 
       <br><br>
       <input type="submit" value="Go To Checkout">
